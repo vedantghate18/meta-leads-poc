@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# React Native / Android
+android/.gradle/
+android/app/build/
+android/build/
+
+# iOS
+ios/Pods/
+ios/build/
+
+# Metro
+.metro-health-check*
+
+# OS
+.DS_Store
+Thumbs.db
