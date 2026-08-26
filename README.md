@@ -2,7 +2,7 @@
 
 A real-time Proof of Concept that captures leads submitted through a Meta Lead Ad form and displays them live inside an already-open React Native application.
 
-## 🚀 How It Works
+## How It Works
 
 ```text
 Meta Lead Form
@@ -25,7 +25,7 @@ React Native App
 Live Lead Card
 ```
 
-## ✨ Features
+## Features
 
 - Meta Lead Ads webhook integration
 - Meta Graph API lead retrieval
@@ -36,23 +36,26 @@ Live Lead Card
 - Environment-based secret configuration
 - Cloudflare Tunnel support for public webhook access
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
+
 - Node.js
 - Express.js
 - WebSocket (`ws`)
 - Meta Graph API
 
 ### Mobile
+
 - React Native
 - JavaScript
 
 ### Infrastructure
+
 - Cloudflare Tunnel
 - Meta Lead Testing Tool
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 meta-leads-poc/
@@ -74,12 +77,12 @@ meta-leads-poc/
 └── README.md
 ```
 
-## ⚙️ Setup
+## Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <https://github.com/vedantghate18/meta-leads-poc>
 cd meta-leads-poc
 ```
 
@@ -132,7 +135,7 @@ npx react-native run-android
 
 The mobile application connects to the backend through WebSockets.
 
-## 🌐 Webhook Setup
+## Webhook Setup
 
 For Meta to reach the local backend, expose the server using a Cloudflare Tunnel.
 
@@ -154,7 +157,7 @@ The webhook verification token must match the value configured in:
 server/.env
 ```
 
-## 🧪 Testing
+## Testing
 
 The project uses the **Meta Lead Testing Tool** to simulate lead submissions.
 
@@ -173,7 +176,7 @@ Test flow:
 11. React Native receives the lead.
 12. The new lead appears immediately on the screen.
 
-## 🔐 Security
+## Security
 
 Sensitive credentials are stored in environment variables and excluded from Git using `.gitignore`.
 
