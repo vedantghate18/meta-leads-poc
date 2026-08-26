@@ -23,3 +23,6 @@ ios/build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Gradle
+**/android/gradle-*.zip
