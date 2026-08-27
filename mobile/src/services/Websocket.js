@@ -6,27 +6,27 @@ export const connectWebSocket = onLead => {
   socket = new WebSocket(WS_URL);
 
   socket.onopen = () => {
-    console.log('✅ WebSocket connected');
+    console.log(' WebSocket connected');
   };
 
   socket.onmessage = event => {
     try {
       const lead = JSON.parse(event.data);
 
-      console.log('🔥 New lead received:', lead);
+      console.log(' New lead received:', lead);
 
       onLead(lead);
     } catch (error) {
-      console.error('❌ Invalid WebSocket data:', error);
+      console.error(' Invalid WebSocket data:', error);
     }
   };
 
   socket.onerror = error => {
-    console.error('❌ WebSocket error:', error);
+    console.error(' WebSocket error:', error);
   };
 
   socket.onclose = () => {
-    console.log('🔌 WebSocket disconnected');
+    console.log(' WebSocket disconnected');
   };
 
   return socket;

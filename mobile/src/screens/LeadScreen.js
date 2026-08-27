@@ -12,7 +12,7 @@ const LeadScreen = () => {
 
   useEffect(() => {
     const socket = connectWebSocket(lead => {
-      console.log('📱 Lead received in LeadScreen:', lead);
+      console.log('Lead received in LeadScreen:', lead);
 
       setLeads(currentLeads => [lead, ...currentLeads]);
     });
