@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const VERIFY_TOKEN = "meta_leads_poc_2026";
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
 // Temporary: Page Access Token
 // Isko production mein .env mein rakhna hai.
