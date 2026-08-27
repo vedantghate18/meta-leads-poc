@@ -5,7 +5,7 @@ A real-time Proof of Concept that captures leads submitted through a Meta Lead A
 ## How It Works
 
 ```text
-Meta Lead Form
+Meta Lead Form / Meta Lead Testing Tool
       │
       ▼
 Meta Webhook
