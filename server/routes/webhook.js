@@ -2,9 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
-
-// Temporary: Page Access Token
-// Isko production mein .env mein rakhna hai.
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 
 // WebSocket broadcast function
